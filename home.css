@@ -1,0 +1,113 @@
+
+header{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: black;
+    height: 80px;
+}
+body{
+ 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Fait en sorte que le corps ait une hauteur minimale de 100% de la hauteur de la fenêtre */
+   
+    background-image: url('back_ground_home.jpg');
+   
+}
+#log1{
+    padding-left: 30px;
+    height: 95px;
+    width: 120px;
+   position: absolute;
+   left: 0;
+  
+}
+#button_nav{
+    cursor: pointer; /* Curseur au survol */
+    transition: background-color 0.3s ease;
+  border: none;
+   color: azure;
+    font-size: 20px; 
+    font-family: 'IM Fell English SC'; 
+    height: 30px;
+    margin: 20px;
+    background-color:#0b0a0a;
+    
+}
+
+  nav {
+        position: absolute;
+        margin-top: 50px;
+        display: inline;
+    }
+    #button_nav:hover {
+        background-color: #f40909; /* Couleur de fond au survol */
+    }
+footer{ 
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6, 6, 6);
+    position: fixed; /* Position fixe pour rester en bas de la fenêtre */
+    bottom: 0; /* Le footer sera fixé en bas de la fenêtre */
+    width: 100%;
+    height: 90px;
+    
+}
+.home_text{
+    text-align: center; /* Centrer le texte horizontalement */
+    padding: 20px; /* Ajouter de l'espace à l'intérieur du rectangle */
+    position: fixed; /* Position fixe pour centrer précisément l'élément */
+    top: 50%; /* Aligner le haut de l'élément au centre vertical */
+    left: 50%; /* Aligner la gauche de l'élément au centre horizontal */
+    transform: translate(-50%, -50%); /* Centrer l'élément horizontalement et verticalement */
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 400px; /* Largeur de l'élément */
+    height: 500px; /* Hauteur de l'élément */
+    display: inline-block; /* Utiliser un conteneur flex pour centrer le contenu */
+    justify-content: center; /* Centrer le contenu horizontalement */
+    align-items: center; /* Centrer le contenu verticalement */
+    
+}
+#wel{
+    text-shadow: 2px 2px 4px rgba(223, 8, 8, 0.8);
+    transition: color 0.3s; /* Transition fluide pour le changement de couleur */
+    letter-spacing: 15px; /* Ajouter un espacement de 2 pixels entre chaque lettre */
+   font-family: 'Iceland';
+   font-size: 40px;
+}
+#wel:hover {
+    color: red; /* Couleur du texte lorsqu'on survole avec le curseur */
+}
+#par_home{
+    font-family: 'Inria Sans';
+    font-size: 20px;
+    color: azure;
+    font-weight: bold;
+    line-height:3;
+}
+footer img {
+    margin-right: 10px; /* Espacement à droite de l'image */
+}
+
+footer p {
+    margin: 0; /* Supprimer les marges par défaut */
+}
+
+footer i {
+    font-size: 24px; /* Taille de la police de l'icône */
+    margin: 0 20px; /* Espacement horizontal autour de l'icône */
+}
+#log2{
+    padding-left: 30px;
+    height: 95px;
+    width: 120px;
+   position: absolute;
+   left: 0;
+    
+
+}
