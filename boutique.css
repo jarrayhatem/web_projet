@@ -1,20 +1,22 @@
 header{
-   
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
    background-color: black;
     height: 80px;
+  
+    
 }
 body{
-    justify-content: center;
-    align-items: center;
+    position: relative;
     background-color: #f5f1f1;
     margin: 0;
     padding: 0;
     min-height: 100vh; /* Fait en sorte que le corps ait une hauteur minimale de 100% de la hauteur de la fenêtre */
+    ; /* Ajoute une marge en haut équivalente à la hauteur du header */
+    margin-left: 200px;
    
-    
    
 }
 #log1{
@@ -47,6 +49,8 @@ body{
         background-color: #f40909; /* Couleur de fond au survol */
     }
 footer{ 
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+    z-index: 998;
     color: beige;
     display: flex;
     justify-content: center;
@@ -79,6 +83,102 @@ footer i {
     
 
 }
-#ls{
-    margin-top: 500px;
+#bare_gauche { 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    
+    margin-bottom: 90px;
+    position: fixed; /* Utiliser une position fixe */
+    top: 0; /* Positionner le volet gauche en haut de la page avec un décalage de 80px correspondant à la hauteur du header */
+    left: 0;
+    bottom: 90px; /* Laisser un espace de 90px en bas pour éviter que le volet gauche ne chevauche le footer */
+    width: 200px;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
 }
+
+#bare_gauche label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-family:'IM Fell English SC' ;
+    display: flex;
+    padding: 5px;
+    font-size: 19px;
+    margin-bottom: 5px; 
+    color: rgb(108, 2, 60);
+}
+#bare_gauche select {
+    width: 100%;
+    margin-bottom: 90px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: #333;
+}
+.car-link {
+    text-decoration: none; /* Supprime le soulignement du lien */
+    color: inherit; /* Utilise la couleur de texte par défaut */
+}
+
+.car-link  {
+     
+    background-image: url('care.avif');
+    background-size: cover;
+    background-position: center;
+    height: 8cm;
+    width: 600%;
+    margin-top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.car-title {
+    color: aliceblue;
+    margin: 0;
+    font-size: 24px;
+}
+ul li a {
+   
+    color: inherit; /* Utilise la couleur de texte par défaut */
+    text-decoration: none; /* Supprime la soulignement du lien */
+  }
+  .ls { min-height: 100vh;
+    margin-top: 80px;
+     margin-bottom: 90px; 
+    
+    list-style: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime les marges intérieures de la liste */
+    display: flex; /* Utilise le modèle de boîte flexible */
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+}
+
+.ls li {
+    width: 100%; /* Définir une largeur de 100% pour chaque élément de liste */
+    margin-bottom: 10px; /* Ajoute un espace entre chaque élément de liste */
+    text-align: center; /* Centre le texte à l'intérieur de chaque élément de liste */
+}
+.bot{
+    min-height: 100vh;
+    margin-top: 80px;
+     margin-bottom: 90px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    margin-left: 20%;
+    
+}
+
+  
