@@ -1,5 +1,6 @@
 
 header{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
    
     display: flex;
     justify-content: center;
@@ -47,6 +48,7 @@ body{
         background-color: #f40909; /* Couleur de fond au survol */
     }
 footer{ 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     color: beige;
     display: flex;
     justify-content: center;
