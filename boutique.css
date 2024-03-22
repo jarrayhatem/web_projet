@@ -23,7 +23,7 @@ body{
     padding-left: 30px;
     height: 95px;
     width: 120px;
-   position: absolute;
+   position: relative;
    left: 0;
   
 }
@@ -75,11 +75,12 @@ footer i {
     margin: 0 20px; /* Espacement horizontal autour de l'icône */
 }
 #log2{
-    padding-left: 30px;
+  margin-left: 60px;
+    display: flex;
     height: 95px;
     width: 120px;
-   position: absolute;
-   left: 0;
+   position: fixed;
+   left: 0px;
     
 
 }
