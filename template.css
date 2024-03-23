@@ -3,9 +3,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-   background-color: black;
-    height: 80px;
-  
+    background-color: black;
+    height: 90px;
+    top: 0px;
+    position: fixed;
+    margin-top: 0; /* Assurez-vous que la marge supérieure est à zéro */
+    left: 0;
+    right: 0;
     
 }
 body{
@@ -14,9 +18,9 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh; /* Fait en sorte que le corps ait une hauteur minimale de 100% de la hauteur de la fenêtre */
-    ; /* Ajoute une marge en haut équivalente à la hauteur du header */
+     /* Ajoute une marge en haut équivalente à la hauteur du header */
     margin-left: 200px;
-   
+   margin-top: 0;
    
 }
 #log1{
@@ -125,65 +129,6 @@ footer i {
     color: #fff;
     background-color: #333;
 }
-.car-link {
-    text-decoration: none; /* Supprime le soulignement du lien */
-    color: inherit; /* Utilise la couleur de texte par défaut */
-}
-
-.car-link  {
-     
-    background-image: url('care.avif');
-    background-size: cover;
-    background-position: center;
-    height: 8cm;
-    width: 600%;
-    margin-top: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-.car-link1  {
-     
-    background-image: url('back_listes.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 8cm;
-    width: 600%;
-    margin-top: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-.car-link2  {
-     
-    background-image: url('back_ofroad.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 8cm;
-    width: 600%;
-    margin-top: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.car-title {
-    color: aliceblue;
-    margin: 0;
-    font-size: 30px;
-}
 ul li a {
    
     color: inherit; /* Utilise la couleur de texte par défaut */
@@ -220,5 +165,3 @@ ul li a {
     margin-left: 20%;
     
 }
-
-  
