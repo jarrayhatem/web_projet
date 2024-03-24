@@ -9,24 +9,14 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #9b9595;
-    position: fixed; /* Fixe la barre de navigation en haut */
+    position:fixed; /* Fixe la barre de navigation en haut */
+    position: sticky;
     top: 0; /* Positionne la barre en haut */
     width: 100%;
 }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: rgb(119, 110, 110);
-}
+
 
 .content {
     padding: 16px;
@@ -46,7 +36,6 @@ body {
     width: 110px; 
     height: 40px;
     border-radius: 10px;
-    background-color: green;
     font-size: larger;
     border-bottom: 2px solid;
     cursor: pointer;
@@ -59,6 +48,9 @@ body {
     border-bottom: 2px solid;
     cursor: pointer;
 }
+#submit:hover {
+    background-color: green;
+}
 #annuler:hover {
     background-color: #f40909; /* Couleur de fond au survol */
 }
@@ -68,12 +60,14 @@ form{
     display:flex ;
     flex-direction: column;
     align-items: center;
+    
+    
 }
 
 input{
-    width: 230px; 
-    border-radius: 20px;
-    height: 30px;
+    width: 400px; 
+    border-radius: 10px;
+    height: 35px;
 }
 #region{
     width: 230px; 
@@ -110,7 +104,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-   background-color: rgb(78, 77, 77);
+   background-color: rgb(7, 7, 7);
     height: 80px;
 }
 
@@ -199,6 +193,9 @@ form>button {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.paiment{
+    color: #f5ecec;
+}
 .circle1 {
     
     width: 100px;
@@ -218,9 +215,14 @@ form>button {
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
         background-color: red;
+        top: 30px;
     
   }
-
+  label{
+    display: block;
+    text-align: center;
+  }
+  
   
   
   
