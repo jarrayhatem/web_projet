@@ -1,224 +1,324 @@
+
 header{
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   background-color: black;
-    height: 80px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background-color: black;
+  height: 80px;
+
   
-    
 }
 body{
-    position: relative;
-    background-color: #f5f1f1;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh; /* Fait en sorte que le corps ait une hauteur minimale de 100% de la hauteur de la fenêtre */
-    ; /* Ajoute une marge en haut équivalente à la hauteur du header */
-    margin-left: 200px;
-   
-   
+  position: relative;
+  background-color: #f5f1f1;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Fait en sorte que le corps ait une hauteur minimale de 100% de la hauteur de la fenêtre */
+  ; /* Ajoute une marge en haut équivalente à la hauteur du header */
+  margin-left: 200px;
+ 
+ 
 }
 #log1{
-    padding-left: 30px;
-    height: 95px;
-    width: 120px;
-   position: relative;
-   left: 0;
-  
+  padding-left: 30px;
+  height: 95px;
+  width: 120px;
+ position: relative;
+ left: 0;
+
 }
 #button_nav{
-    cursor: pointer; /* Curseur au survol */
-    transition: background-color 0.3s ease;
-  border: none;
-   color: azure;
-    font-size: 20px; 
-    font-family: 'IM Fell English SC'; 
-    height: 30px;
-    margin: 20px;
-    background-color:#0b0a0a;
-    
+  cursor: pointer; /* Curseur au survol */
+  transition: background-color 0.3s ease;
+border: none;
+ color: azure;
+  font-size: 20px; 
+  font-family: 'IM Fell English SC'; 
+  height: 30px;
+  margin: 20px;
+  background-color:#0b0a0a;
+  
 }
 
-  nav {
-        position: absolute;
-        margin-top: 50px;
-        display: inline;
-    }
-    #button_nav:hover {
-        background-color: #f40909; /* Couleur de fond au survol */
-    }
+nav {
+      position: absolute;
+      margin-top: 50px;
+      display: inline;
+  }
+  #button_nav:hover {
+      background-color: #f40909; /* Couleur de fond au survol */
+  }
 footer{
-    
-    
-    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
-    z-index: 998;
-    color: beige;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(6, 6, 6);
-    position: fixed; /* Position fixe pour rester en bas de la fenêtre */
-    bottom: 0; /* Le footer sera fixé en bas de la fenêtre */
-    width: 100%;
-    height: 90px;
-    left: 0;
+  
+  
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(6, 6, 6);
+  position: fixed; /* Position fixe pour rester en bas de la fenêtre */
+  bottom: 0; /* Le footer sera fixé en bas de la fenêtre */
+  width: 100%;
+  height: 90px;
+  left: 0;
 }
 footer img {
-    
-    margin-right: 10px; /* Espacement à droite de l'image */
+  
+  margin-right: 10px; /* Espacement à droite de l'image */
 }
 
 footer p {
-    margin: 0; /* Supprimer les marges par défaut */
+  margin: 0; /* Supprimer les marges par défaut */
 }
 
 footer i {
-    font-size: 24px; /* Taille de la police de l'icône */
-    margin: 0 20px; /* Espacement horizontal autour de l'icône */
+  font-size: 24px; /* Taille de la police de l'icône */
+  margin: 0 20px; /* Espacement horizontal autour de l'icône */
 }
 #log2{
-   margin-left: 30px;
-    display: flex;
-    height: 95px;
-    width: 120px;
-   position: fixed;
-   left: 0px;
-    
+ margin-left: 30px;
+  display: flex;
+  height: 95px;
+  width: 120px;
+ position: fixed;
+ left: 0px;
+  
 
 }
 
 #bare_gauche {  overflow-y: scroll;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-    align-items: center;
-    font-family: 'Times New Roman', Times, serif;
-      
-     bottom: 90px;
-    position: fixed; /* Utiliser une position fixe */
-    top: 0; /* Positionner le volet gauche en haut de la page avec un décalage de 80px correspondant à la hauteur du header */
-    left: 0;
-     /* Laisser un espace de 90px en bas pour éviter que le volet gauche ne chevauche le footer */
-    width: 200px;
-    background-color: #000000;
-    color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    height: auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+    
+   bottom: 90px;
+  position: fixed; /* Utiliser une position fixe */
+  top: 0; /* Positionner le volet gauche en haut de la page avec un décalage de 80px correspondant à la hauteur du header */
+  left: 0;
+   /* Laisser un espace de 90px en bas pour éviter que le volet gauche ne chevauche le footer */
+  width: 200px;
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  height: auto;
 }
 
 #bare_gauche label {
-    margin-top: 10px;
-    font-weight: bold;
-    font-family:'IM Fell English SC' ;
-    display: flex;
-    padding: 5px;
-    font-size: 19px;
-    margin-bottom: 5px; 
-    color: rgb(108, 2, 60);
+  margin-top: 10px;
+  font-weight: bold;
+  font-family:'IM Fell English SC' ;
+  display: flex;
+  padding: 5px;
+  font-size: 19px;
+  margin-bottom: 5px; 
+  color: rgb(108, 2, 60);
 }
 #bare_gauche select {
-    width: 100%;
-    margin-bottom: 90px;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    color: #fff;
-    background-color: #333;
+  width: 100%;
+  margin-bottom: 90px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  background-color: #333;
 }
 .car-link {
-    text-decoration: none; /* Supprime le soulignement du lien */
-    color: inherit; /* Utilise la couleur de texte par défaut */
+  text-decoration: none; /* Supprime le soulignement du lien */
+  color: inherit; /* Utilise la couleur de texte par défaut */
 }
 
 .car-link  {
-     
-    background-image: url('care.avif');
-    background-size: cover;
-    background-position: center;
-    height: 8cm;
-    width: 600%;
-    margin-top: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+   
+  background-image: url('care.avif');
+  background-size: cover;
+  background-position: center;
+  height: 8cm;
+  width: 600%;
+  margin-top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .car-link1  {
-     
-    background-image: url('back_listes.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 8cm;
-    width: 600%;
-    margin-top: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+   
+  background-image: url('back_listes.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 8cm;
+  width: 600%;
+  margin-top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .car-link2  {
-     
-    background-image: url('back_ofroad.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 8cm;
-    width: 600%;
-    margin-top: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+   
+  background-image: url('back_ofroad.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 8cm;
+  width: 600%;
+  margin-top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .car-title {
-    color: aliceblue;
-    margin: 0;
-    font-size: 30px;
+  color: aliceblue;
+  margin: 0;
+  font-size: 30px;
 }
 ul li a {
-   
-    color: inherit; /* Utilise la couleur de texte par défaut */
-    text-decoration: none; /* Supprime la soulignement du lien */
-  }
-  .ls { min-height: 100vh;
-    margin-top: 80px;
-    bottom: 90px;
-     margin-bottom: 90px; 
-    padding-bottom: 20px;
-    list-style: none; /* Supprime les puces de la liste */
-    padding: 0; /* Supprime les marges intérieures de la liste */
-    display: flex; /* Utilise le modèle de boîte flexible */
-    flex-direction: column; /* Empile les éléments verticalement */
-    align-items: center; /* Centre les éléments horizontalement */
+ 
+  color: inherit; /* Utilise la couleur de texte par défaut */
+  text-decoration: none; /* Supprime la soulignement du lien */
+}
+.ls { min-height: 100vh;
+  margin-top: 80px;
+  bottom: 90px;
+   margin-bottom: 90px; 
+  padding-bottom: 20px;
+  list-style: none; /* Supprime les puces de la liste */
+  padding: 0; /* Supprime les marges intérieures de la liste */
+  display: flex; /* Utilise le modèle de boîte flexible */
+  flex-direction: column; /* Empile les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
 }
 
 .ls li { 
-    
-    padding-bottom: 20px;
-    margin-bottom: 90px; 
-    width: 100%; /* Définir une largeur de 100% pour chaque élément de liste */
-    margin-bottom: 10px; /* Ajoute un espace entre chaque élément de liste */
-    text-align: center; /* Centre le texte à l'intérieur de chaque élément de liste */
+  
+  padding-bottom: 20px;
+  margin-bottom: 90px; 
+  width: 100%; /* Définir une largeur de 100% pour chaque élément de liste */
+  margin-bottom: 10px; /* Ajoute un espace entre chaque élément de liste */
+  text-align: center; /* Centre le texte à l'intérieur de chaque élément de liste */
 }
 .bot{
-    min-height: 100vh;
-    margin-top: 80px;
-     margin-bottom: 90px; 
+  min-height: 100vh;
+  margin-top: 80px;
+   margin-bottom: 90px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto; 
+  margin-left: 0%;
+  
+}
+
+
+/*les reseaux sociaux*/
+ul {
+    list-style: none;
+  }
+  
+  .example-2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto; 
-    margin-left: 20%;
-    
-}
+  }
+  .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+    background-color: #0274b3;
+  }
+  
+  .example-2 .icon-content a[data-social="facebook"] .filled,
+  .example-2 .icon-content a[data-social="facebook"] ~ .tooltip {
+    background-color: #03215e;
+  }
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f
+    );
+  }
+  .example-2 .icon-content a[data-social="youtube"] .filled,
+  .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+    background-color: #ff0000;
+  }
+  
 
   
