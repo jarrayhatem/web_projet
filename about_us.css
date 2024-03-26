@@ -1,0 +1,214 @@
+
+  
+#log1 {
+  padding-left: 30px;
+  height: 95px;
+  width: 120px;
+  position: absolute;
+  left: 0;
+}
+
+header {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 90px;
+  top: 0px;
+  position: fixed;
+  margin-top: 0; /* Assurez-vous que la marge supérieure est à zéro */
+  left: 0;
+  right: 0;
+  z-index: 10; /* Important pour que la navbar cache le contenu en dessous */
+}
+
+#button_nav {
+  cursor: pointer; /* Curseur au survol */
+  transition: background-color 0.3s ease;
+  border: none;
+  color: azure;
+  font-size: 20px;
+  font-family: 'IM Fell English SC';
+  height: 30px;
+  margin: 20px;
+  background-color: #0b0a0a;
+}
+
+#button_nav:hover {
+  background-color: #f40909; /* Couleur de fond au survol */
+}
+
+nav {
+  position: absolute;
+  margin-top: 50px;
+  display: inline;
+}
+
+#button_nav:hover {
+    background-color: #f40909; /* Couleur de fond au survol */
+}
+
+    
+
+
+
+#car {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+    
+    
+  }
+  .card {
+    width: 190px;
+    height: 254px;
+    background:  rgb(248, 236, 236);
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .card h2 {
+    z-index: 1;
+    color: black;
+    font-size: 2em;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(29, 27, 27), rgb(31, 29, 29));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background:  rgb(248, 236, 236);
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+   .card:hover:before {
+    background-image: linear-gradient(180deg, rgb(247, 7, 7), rgb(252, 6, 6));
+    animation: rotBGimg 3.5s linear infinite;
+  } 
+  
+  
+#support {
+    display: flex; /* Transforme le conteneur en flexbox */
+  }
+  
+.card {
+    margin-right: 178px; /* Ajoute une marge droite à chaque carte sauf la dernière */
+}
+  
+.card:last-child {
+    margin-right: 0; /* Supprime la marge droite de la dernière carte */
+}
+#description {
+  float: left;
+  margin-left: 20px;
+  
+}
+#description h3 {
+  margin-bottom: 10px;
+  margin-left: 1px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  
+}
+
+#description button {
+  margin-top: 10px;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+.btn {
+  border: none;
+  width: 15em;
+  height: 5em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1C1A1C;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+  overflow: hidden;
+}
+
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #AAAAAA;
+  font-size: medium;
+}
+
+.btn:hover {
+  background: linear-gradient(0deg,#fa1212,#dd0824);
+  box-shadow: inset 0px 1px 0px 0px rgba(245, 4, 4, 0.4),
+  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 0px 0px 4px rgba(212, 9, 9, 0.2),
+  0px 0px 180px 0px #f7093d;
+  transform: translateY(-2px);
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+} 
+
+.car_descreption {
+  margin-bottom: 50px; /* Ajoute une marge inférieure de 50px */
+}
+
+
+#video {
+  position: absolute; /* Or relative if you want it to flow with the content */
+
+  left: 50%;
+  transform: translateX(-50%); /* Center the video horizontally */
+  height: 550PX;
+  width: 1000px;
+  z-index: 5;
+}
+
+
+  
+
+  
+   
+
+
+ 
