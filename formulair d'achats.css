@@ -50,10 +50,10 @@ body {
     cursor: pointer;
 }
 #submit:hover {
-    background-color: green;
+    background-color:#006400;
 }
 #annuler:hover {
-    background-color: #f40909; /* Couleur de fond au survol */
+    background-color:#A63628; /* Couleur de fond au survol */
 }
 
 
@@ -105,7 +105,7 @@ header{
     cursor: pointer; /* Curseur au survol */
     transition: background-color 0.3s ease;
   border: none;
-   color: azure;
+   color: white;
     font-size: 20px; 
     font-family: 'IM Fell English SC'; 
     height: 30px;
@@ -120,7 +120,7 @@ header{
         display: inline;
     }
     #button_nav:hover {
-        background-color: #f40909; /* Couleur de fond au survol */
+        background-color: #A63628; /* Couleur de fond au survol */
     }
 
     
@@ -141,14 +141,14 @@ header{
     
 }
 #wel{
-    text-shadow: 2px 2px 4px rgba(223, 8, 8, 0.8);
+    text-shadow: 2px 2px 4px #A63628;
     transition: color 0.3s; /* Transition fluide pour le changement de couleur */
     letter-spacing: 15px; /* Ajouter un espacement de 2 pixels entre chaque lettre */
    font-family: 'Iceland';
    font-size: 40px;
 }
 #wel:hover {
-    color: red; /* Couleur du texte lorsqu'on survole avec le curseur */
+    color:#A63628; /* Couleur du texte lorsqu'on survole avec le curseur */
 }
 #par_home{
     font-family: 'Inria Sans';
@@ -173,7 +173,7 @@ form>button {
     margin-top: 10px ;
 }
 .paiment:hover{
-    background: linear-gradient(to right,#05dd4d,#4eb634 50%);
+    background: linear-gradient(to right,#006400,#006400 50%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -187,7 +187,7 @@ form>button {
     height: 50px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    background-color: red;
+    background-color:#A63628;
     position: absolute; 
     top:80px;
     right:0;
@@ -199,7 +199,7 @@ form>button {
         height: 50px;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
-        background-color: red;
+        background-color: #A63628;
         top: 30px;
     
   }
@@ -233,14 +233,14 @@ form>button {
    
 .input:focus, input:valid {
     outline: none;
-    border: 1.5px solid #ff0000;
+    border: 1.5px solid #A63628;
    }
    
 .input:focus ~ label, input:valid ~ label {
     transform: translateY(-50%) scale(0.8);
     background-color: rgb(236, 226, 226);
     padding: 0 .2em;
-    color: #ff0000;
+    color: #A63628;
    }
 input{
     width: 500px; 

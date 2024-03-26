@@ -26,18 +26,22 @@ body{
    left: 0;
   
 }
-#button_nav{
-    cursor: pointer; /* Curseur au survol */
-    transition: background-color 0.3s ease;
-  border: none;
-   color: azure;
-    font-size: 20px; 
-    font-family: 'IM Fell English SC'; 
-    height: 30px;
-    margin: 20px;
-    background-color:#0b0a0a;
-    
+#button_nav:hover {
+  background-color: #A63628; /* Couleur de fond au survol */
 }
+#button_nav{
+  cursor: pointer; /* Curseur au survol */
+  transition: background-color 0.3s ease;
+border: none;
+ color: azure;
+  font-size: 20px; 
+  font-family: 'IM Fell English SC'; 
+  height: 30px;
+  margin: 20px;
+  background-color:#0b0a0a;
+  
+}
+
 
   nav {
         position: absolute;
@@ -45,7 +49,7 @@ body{
         display: inline;
     }
     #button_nav:hover {
-        background-color: #f40909; /* Couleur de fond au survol */
+        background-color:#A63628; /* Couleur de fond au survol */
     }
 footer{ 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
@@ -69,21 +73,21 @@ footer{
     transform: translate(-50%, -50%); /* Centrer l'élément horizontalement et verticalement */
     background-color: rgba(255, 255, 255, 0.4);
     width: 400px; /* Largeur de l'élément */
-    height: 500px; /* Hauteur de l'élément */
+    height: 400px; /* Hauteur de l'élément */
     display: inline-block; /* Utiliser un conteneur flex pour centrer le contenu */
     justify-content: center; /* Centrer le contenu horizontalement */
     align-items: center; /* Centrer le contenu verticalement */
     
 }
 #wel{
-    text-shadow: 2px 2px 4px rgba(223, 8, 8, 0.8);
+    text-shadow: 2px 2px 4px#A63628;
     transition: color 0.3s; /* Transition fluide pour le changement de couleur */
     letter-spacing: 15px; /* Ajouter un espacement de 2 pixels entre chaque lettre */
    font-family: 'Iceland';
    font-size: 40px;
 }
 #wel:hover {
-    color: red; /* Couleur du texte lorsqu'on survole avec le curseur */
+    color: #A63628; /* Couleur du texte lorsqu'on survole avec le curseur */
 }
 #par_home{
     font-family: 'Inria Sans';
@@ -201,11 +205,11 @@ ul {
       #b33ab4,
       #c135b4,
       #e1306c,
-      #fd1f1f
+      #A63628
     );
   }
   .example-2 .icon-content a[data-social="youtube"] .filled,
   .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
-    background-color: #ff0000;
+    background-color: #A63628;
   }
   

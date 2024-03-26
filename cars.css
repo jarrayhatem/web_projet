@@ -31,7 +31,7 @@ footer {
 
 h1 {
     text-align: center;
-    color: #f40909;
+    color: #A63628;
     font-weight: 200px;
     font-family: 
 }
@@ -54,7 +54,7 @@ h1 {
   }
   
   .bouton-acheter:hover {
-    background-color: green;
+    background-color: #006400;
   }
 .case {
     width: 300px;
@@ -71,7 +71,7 @@ h1 {
 }
 
 .bloc:hover .paragraphe {
-    background-color: rgb(247, 45, 45);
+    background-color:#A63628;
   }
 /* Lien vers les voitures */
 
@@ -99,7 +99,7 @@ nav {
     display: inline;
 }
 #button_nav:hover {
-    background-color: #f40909; /* Couleur de fond au survol */
+    background-color:#A63628; /* Couleur de fond au survol */
 }
 #button_nav{
     cursor: pointer; /* Curseur au survol */
@@ -127,7 +127,7 @@ nav {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    box-shadow: 5px 10px 5px rgb(248, 4, 4);
+    box-shadow: 5px 10px 5px#A63628;
 
 }
 
@@ -194,7 +194,7 @@ body{
         display: inline;
     }
     #button_nav:hover {
-        background-color: #f40909; /* Couleur de fond au survol */
+        background-color: #A63628; /* Couleur de fond au survol */
     }
 footer{
     
@@ -236,11 +236,12 @@ footer i {
 
 }
 
-#bare_gauche {  overflow-y: scroll;
+#bare_gauche {  
+    overflow-y: scroll;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
-      
+    
     bottom: 0px;
     position: fixed; /* Utiliser une position fixe */
     top: 0; /* Positionner le volet gauche en haut de la page avec un décalage de 80px correspondant à la hauteur du header */
@@ -262,7 +263,7 @@ footer i {
     padding: 5px;
     font-size: 19px;
     margin-bottom: 5px; 
-    color: rgb(108, 2, 60);
+    color: #F0E68C;
 }
 #bare_gauche select {
     width: 100%;
@@ -310,14 +311,14 @@ ul li a {
     
 }
 #l1:hover{
-    color: #c21b4d;
+    color: #F0E68C;
 }
 #l2:hover{
-    color: #c21b4d;
+    color: #F0E68C;
 }
 #l3:hover{
-    color: #c21b4d;
+    color: #F0E68C;
 }
 #l4:hover{
-    color: #c21b4d;
+    color:#F0E68C;
 }
