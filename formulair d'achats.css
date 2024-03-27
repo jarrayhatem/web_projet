@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
    
-    background-color: rgb(236, 226, 226); 
+    background-color:#F0E68C
 }
 
 
@@ -238,7 +238,7 @@ form>button {
    
 .input:focus ~ label, input:valid ~ label {
     transform: translateY(-50%) scale(0.8);
-    background-color: rgb(236, 226, 226);
+    background-color: #F0E68C;
     padding: 0 .2em;
     color: #A63628;
    }
