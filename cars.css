@@ -25,9 +25,7 @@ footer {
 
 /* Section des voitures */
 
-.voitures {
-    margin-bottom: 20px;
-}
+
 
 h1 {
     text-align: center;
@@ -43,36 +41,13 @@ h1 {
 }
 
   
-  .bouton-acheter {
-    background-color: #ccc;
-    color: #000;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    text-decoration: none;
-    cursor: pointer;
-    
-  }
   
-  .bouton-acheter:hover {
-    background-color: #006400;
-  }
-.case {
-    width: 300px;
-    height: 200px;
-    border: 1px solid #ddd;
-    margin: 5px;
-    overflow: hidden;
-}
+  
 
-.case img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.bloc:hover .paragraphe {
-    background-color:#A63628;
-  }
+
+
+
 /* Lien vers les voitures */
 
 a {
@@ -97,6 +72,7 @@ nav {
     position: absolute;
     margin-top: 50px;
     display: inline;
+    z-index: 1232;
 }
 #button_nav:hover {
     background-color:#A63628; /* Couleur de fond au survol */
@@ -120,28 +96,12 @@ nav {
    position: absolute;
    left: 0;
 }
-.case{
-    width: 360px;
-    height: 300px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    box-shadow: 5px 10px 5px#A63628;
-
-}
 
 
-.case p {
-    text-align: center;  /* Center align the text */
-    font-size: 0.8rem;  /* Adjust font size for description */
-    margin-bottom: 300px;  /* Add space between description and image */
-    margin-top: 250px;
-    color: #000;
-  }
-  .ligne{
-    margin-bottom: 200px;
-  }
+
+
+    
+  
   header{
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -154,11 +114,11 @@ nav {
     margin-top: 0; /* Assurez-vous que la marge supérieure est à zéro */
     left: 0;
     right: 0;
-    
+    z-index: 12;
 }
 body{
     position: relative;
-    background-color: #f5f1f1;
+    background-color: #e4e3de;
     margin: 0;
     padding: 0;
     min-height: 100vh; /* Fait en sorte que le corps ait une hauteur minimale de 100% de la hauteur de la fenêtre */
@@ -192,6 +152,7 @@ body{
         position: absolute;
         margin-top: 10px;
         display: inline;
+        
     }
     #button_nav:hover {
         background-color: #A63628; /* Couleur de fond au survol */
@@ -253,7 +214,9 @@ footer i {
     padding: 20px;
     box-sizing: border-box;
     height: auto;
+    z-index: 15;
 }
+
 
 #bare_gauche label {
     margin-top: 10px;
@@ -278,6 +241,8 @@ ul li a {
    
     color: inherit; /* Utilise la couleur de texte par défaut */
     text-decoration: none; /* Supprime la soulignement du lien */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: large;
   }
   .ls { min-height: 100vh;
     margin-top: 80px;
@@ -298,6 +263,7 @@ ul li a {
     width: 100%; /* Définir une largeur de 100% pour chaque élément de liste */
     margin-bottom: 10px; /* Ajoute un espace entre chaque élément de liste */
     text-align: center; /* Centre le texte à l'intérieur de chaque élément de liste */
+    
 }
 .bot{
     min-height: 100vh;
@@ -321,4 +287,132 @@ ul li a {
 }
 #l4:hover{
     color:#F0E68C;
+}
+
+
+/*card*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 100px 50px;
+    padding: 100px 50px;
+    margin-bottom: 80px;
+}
+
+
+.container .custom-card {
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: #FFF;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container .custom-card:hover {
+    height: 300px;
+   
+}
+
+.container .custom-card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .custom-card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px #A63628;
+}
+
+.container .custom-card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .custom-card .custom-content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .custom-card:hover .custom-content {
+    top: 130px;
+    height: 250px;
+}
+
+.container .custom-card .custom-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333333;
+}
+
+.container .custom-card .custom-content p {
+    color: #333;
+}
+
+.container .custom-card .custom-content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: #181818;
+    color: #fff;
+    font-weight: 500;
+}
+
+.container .custom-card .custom-content a:hover {
+    opacity: 0.8;
+    background-color: #006400
+};
+
+
+@media (max-width: 480px) {
+    .container .custom-card {
+        width: 200px;
+        border-radius: 15px;
+    }
+
+    .container .custom-card .img-box {
+        width: 180px;
+        border-radius: 10px;
+    }
+
+    .container .custom-card .custom-content p {
+        font-size: 0.8rem;
+    }
+
+    .container .custom-card .custom-content a {
+        font-size: 0.9rem;
+    }
 }
