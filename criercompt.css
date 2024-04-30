@@ -1,18 +1,116 @@
-/* Styles pour l'en-tête */
+/* CSS pour l'interface de formulaire d'inscription */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #A63628;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 476px;
+    background-color: #000000;
+    height: 650px;
+}
+
+#wel {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Aleo';
+    font-weight: bold;
+}
+
+#mail,
+#password {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative; /* Modifié de 'fixed' à 'relative' */
+}
+
+#i2,
+#i1 {
+    color: aliceblue;
+    text-align: center;
+    border-radius: 44px;
+    height: 35px;
+    background-color: #2C2606;
+}
+
+#li {
+    position: relative; /* Modifié de 'fixed' à 'relative' */
+    width: 100%; /* Ajusté pour occuper toute la largeur de son parent */
+    text-align: center;
+    color: #A63628;
+}
+
+.but {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#button,
+#mybutton {
+    width: 180px;
+    height: 44px;
+    border-radius: 44px;
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+#button {
+    background-color: #EFE7E2;
+}
+
+#mybutton {
+    color: #000000;
+    background-color: #A63628;
+}
+
+#im2 {
+    background-color: black;
+    align-self: center;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+form {
+    text-align: center;
+}
+
+/* Le reste du code reste inchangé */
+/* Partie inchangée du code CSS */
+
 header {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: flex-start; /* Aligner le contenu à gauche */
+    justify-content: center;
     align-items: center;
     background-color: black;
     height: 90px;
-    width: 100%;
     top: 0px;
     position: fixed;
     margin-top: 0;
     left: 0;
     right: 0;
-    padding-left: 20px; /* Ajouter un peu d'espace à gauche */
+}
+
+body {
+    position: relative;
+    background-color: #f5f1f1;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    margin-left: 200px;
+    margin-top: 0;
 }
 
 #log1 {
@@ -23,95 +121,24 @@ header {
     left: 0;
 }
 
-/* Styles pour le corps de la page */
-body {
-    position: relative;
-    background-color: #f5f1f1;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center; /* Centrer le contenu horizontalement */
-    align-items: center; /* Centrer le contenu verticalement */
-}
-
-/* Styles pour le formulaire d'inscription */
-.container {
-    color: #ffffff;
-    margin-top: 10px;
-    width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #000000;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
+#button_nav {
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    color: azure;
+    font-size: 20px;
+    font-family: 'IM Fell English SC';
+    height: 30px;
+    margin: 20px;
+    background-color: #0b0a0a;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-footer {
-    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
-    z-index: 998;
-    color: beige;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(6, 6, 6);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 90px;
-    left: 0;
+nav {
+    position: absolute;
+    margin-top: 50px;
+    display: inline;
 }
 
-footer img {
-    margin-right: 10px;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer i {
-    font-size: 24px;
-    margin: 0 20px;
-}
-
-#log2 {
-    margin-left: 30px;
-    display: flex;
-    height: 95px;
-    width: 120px;
-    position: fixed;
-    left: 0px;
-}
 .example-2 {
     display: flex;
     justify-content: center;
@@ -203,7 +230,3 @@ footer i {
   .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
     background-color: #A63628;
   }
-  ul {
-    list-style: none;
-  }
-  

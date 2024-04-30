@@ -17,7 +17,7 @@ body{
   padding: 0;
   min-height: 100vh; /* Fait en sorte que le corps ait une hauteur minimale de 100% de la hauteur de la fenêtre */
   ; /* Ajoute une marge en haut équivalente à la hauteur du header */
-  
+ 
  
  
 }
@@ -202,7 +202,7 @@ ul li a {
   justify-content: center;
   align-items: center;
   margin: auto; 
-  margin-left: 9%;
+  margin-left: 18%;
   
 }
 

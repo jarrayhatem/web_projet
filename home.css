@@ -73,7 +73,7 @@ footer{
     transform: translate(-50%, -50%); /* Centrer l'élément horizontalement et verticalement */
     background-color: rgba(255, 255, 255, 0.4);
     width: 400px; /* Largeur de l'élément */
-    height: 400px; /* Hauteur de l'élément */
+    height: 500px; /* Hauteur de l'élément */
     display: inline-block; /* Utiliser un conteneur flex pour centrer le contenu */
     justify-content: center; /* Centrer le contenu horizontalement */
     align-items: center; /* Centrer le contenu verticalement */
